@@ -36,6 +36,8 @@ services:
       dockerfile: Dockerfile
     expose:
       - "8000"
+    volumes:
+      - staticfiles:/app/staticfiles
     environment:
       - DJANGO_SETTINGS_MODULE=config.settings.production
       - DEBUG=${DEBUG:-False}
@@ -86,7 +88,7 @@ services:
       - "443:443"
     volumes:
       - ./nginx/ssl:/etc/nginx/ssl:ro
-      - ./staticfiles:/var/www/static:ro
+      - staticfiles:/var/www/static:ro
       - nginx_logs:/var/log/nginx
     depends_on:
       - frontend
@@ -97,3 +99,4 @@ volumes:
   postgres_data:
   redis_data:
   nginx_logs:
+  staticfiles:
