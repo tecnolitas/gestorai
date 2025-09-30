@@ -80,7 +80,7 @@ services:
   nginx:
     build:
       context: ./nginx
-      dockerfile: Dockerfile
+      dockerfile: Dockerfile.prod
     ports:
       - "80:80"
       - "443:443"
