@@ -14,6 +14,13 @@ SECRET_KEY = os.getenv('SECRET_KEY', 'your-production-secret-key-change-this')
 ALLOWED_HOSTS = [
     'gestorai.tecnolitas.com',
     'localhost',  # For health checks
+    'web',  # For internal container communication
+    '172.18.0.4',  # Container IP
+]
+
+# CSRF Configuration for production
+CSRF_TRUSTED_ORIGINS = [
+    'https://gestorai.tecnolitas.com',
 ]
 
 # Database configuration - PostgreSQL
@@ -26,7 +33,7 @@ DATABASES = {
         'HOST': os.getenv('DB_HOST', 'db'),
         'PORT': os.getenv('DB_PORT', '5432'),
         'OPTIONS': {
-            'sslmode': 'require',
+            'sslmode': 'disable',  # SSL disabled for internal container communication
         },
     }
 }
@@ -77,7 +84,8 @@ CACHES = {
 }
 
 # Security settings for production
-SECURE_SSL_REDIRECT = True
+SECURE_SSL_REDIRECT = False  # Nginx handles HTTPS
+SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')  # Trust proxy headers
 SECURE_HSTS_SECONDS = 31536000  # 1 year
 SECURE_HSTS_INCLUDE_SUBDOMAINS = True
 SECURE_HSTS_PRELOAD = True
