@@ -1,0 +1,218 @@
+[
+  {
+    "id": 27,
+    "name": "Sistema de Reportes Ejecutivos",
+    "description": "Generación automática de reportes ejecutivos con análisis de rendimiento y productividad de equipos.",
+    "owner_id": 1,
+    "created_at": "2025-09-22T09:05:01.546639+00:00",
+    "updated_at": "2025-09-22T09:05:01.546673+00:00"
+  },
+  {
+    "id": 26,
+    "name": "Dashboard de Supervisión Global",
+    "description": "Panel de control para supervisar todos los proyectos y tareas de la plataforma con métricas en tiempo real.",
+    "owner_id": 1,
+    "created_at": "2025-09-22T09:05:01.527604+00:00",
+    "updated_at": "2025-09-22T09:05:01.527650+00:00"
+  },
+  {
+    "id": 25,
+    "name": "API de Integración Empresarial",
+    "description": "API REST para integración con sistemas externos, webhooks, sincronización de datos y automatización de procesos empresariales.",
+    "owner_id": 1,
+    "created_at": "2025-09-22T08:56:02.407866+00:00",
+    "updated_at": "2025-09-22T08:56:02.407898+00:00"
+  },
+  {
+    "id": 24,
+    "name": "Sistema de Gestión de Proyectos Avanzado",
+    "description": "Plataforma completa de gestión de proyectos con metodologías ágiles, seguimiento de tiempo, recursos y colaboración en equipo.",
+    "owner_id": 1,
+    "created_at": "2025-09-22T08:56:02.391582+00:00",
+    "updated_at": "2025-09-22T08:56:02.391615+00:00"
+  },
+  {
+    "id": 23,
+    "name": "Plataforma de Análisis de Datos",
+    "description": "Herramienta de business intelligence con visualizaciones interactivas, machine learning y reportes predictivos para toma de decisiones.",
+    "owner_id": 1,
+    "created_at": "2025-09-22T08:56:02.369069+00:00",
+    "updated_at": "2025-09-22T08:56:02.369121+00:00"
+  },
+  {
+    "id": 22,
+    "name": "Portal de Clientes Corporativo",
+    "description": "Sistema web para gestión de clientes corporativos con portal de autoservicio, seguimiento de casos y facturación automatizada.",
+    "owner_id": 1,
+    "created_at": "2025-09-22T08:56:02.350422+00:00",
+    "updated_at": "2025-09-22T08:56:02.350469+00:00"
+  },
+  {
+    "id": 21,
+    "name": "Sistema de Gestión Empresarial",
+    "description": "Plataforma integral para la gestión de recursos humanos, finanzas y operaciones empresariales con dashboard ejecutivo y reportes avanzados.",
+    "owner_id": 1,
+    "created_at": "2025-09-22T08:56:02.328750+00:00",
+    "updated_at": "2025-09-22T08:56:02.328794+00:00"
+  },
+  {
+    "id": 20,
+    "name": "App de Gestión de Flotas",
+    "description": "Monitoreo de vehículos, mantenimiento preventivo y optimización de rutas de transporte.",
+    "owner_id": 7,
+    "created_at": "2025-09-07T09:09:26.805416+00:00",
+    "updated_at": "2025-09-22T09:05:01.190468+00:00"
+  },
+  {
+    "id": 19,
+    "name": "Sistema de Gestión de Calidad",
+    "description": "Control de calidad, auditorías y certificaciones ISO con seguimiento de no conformidades.",
+    "owner_id": 3,
+    "created_at": "2025-09-07T09:09:26.787656+00:00",
+    "updated_at": "2025-09-22T09:05:01.210448+00:00"
+  },
+  {
+    "id": 18,
+    "name": "Portal de Análisis de Datos",
+    "description": "Herramientas de business intelligence con dashboards personalizables y reportes automáticos.",
+    "owner_id": 7,
+    "created_at": "2025-09-07T09:09:26.770125+00:00",
+    "updated_at": "2025-09-22T09:05:01.228033+00:00"
+  },
+  {
+    "id": 17,
+    "name": "Sistema de Chat y Comunicación",
+    "description": "Plataforma de mensajería interna con videollamadas y compartir archivos.",
+    "owner_id": 3,
+    "created_at": "2025-09-07T09:09:26.752211+00:00",
+    "updated_at": "2025-09-22T09:05:01.244898+00:00"
+  },
+  {
+    "id": 16,
+    "name": "API de Integración con Redes Sociales",
+    "description": "Conectores para Facebook, Instagram, Twitter y LinkedIn con análisis de engagement.",
+    "owner_id": 4,
+    "created_at": "2025-09-07T09:09:26.732957+00:00",
+    "updated_at": "2025-09-22T09:05:01.262960+00:00"
+  },
+  {
+    "id": 15,
+    "name": "Sistema de Gestión de Proyectos",
+    "description": "Herramienta completa para planificación, seguimiento y colaboración en proyectos.",
+    "owner_id": 5,
+    "created_at": "2025-09-07T09:09:26.715978+00:00",
+    "updated_at": "2025-09-22T09:05:01.277468+00:00"
+  },
+  {
+    "id": 14,
+    "name": "Dashboard de Ventas y Marketing",
+    "description": "Análisis de campañas de marketing, conversiones y métricas de ventas en tiempo real.",
+    "owner_id": 8,
+    "created_at": "2025-09-07T09:09:26.697058+00:00",
+    "updated_at": "2025-09-22T09:05:01.293411+00:00"
+  },
+  {
+    "id": 13,
+    "name": "Sistema de Reservas y Citas",
+    "description": "Plataforma para gestión de citas médicas, reservas de restaurantes y servicios.",
+    "owner_id": 6,
+    "created_at": "2025-09-07T09:09:26.680099+00:00",
+    "updated_at": "2025-09-22T09:05:01.311796+00:00"
+  },
+  {
+    "id": 12,
+    "name": "App de Delivery y Logística",
+    "description": "Aplicación móvil para gestión de entregas, rutas optimizadas y seguimiento en tiempo real.",
+    "owner_id": 3,
+    "created_at": "2025-09-07T09:09:26.660583+00:00",
+    "updated_at": "2025-09-22T09:05:01.327131+00:00"
+  },
+  {
+    "id": 11,
+    "name": "Sistema de Facturación Electrónica",
+    "description": "Emisión y gestión de facturas electrónicas con integración fiscal y contable.",
+    "owner_id": 9,
+    "created_at": "2025-09-07T09:09:26.643681+00:00",
+    "updated_at": "2025-09-22T09:05:01.344769+00:00"
+  },
+  {
+    "id": 10,
+    "name": "Portal de Clientes B2B",
+    "description": "Plataforma web para gestión de clientes corporativos con catálogo de productos y pedidos.",
+    "owner_id": 8,
+    "created_at": "2025-09-07T09:09:26.625113+00:00",
+    "updated_at": "2025-09-22T09:05:01.358245+00:00"
+  },
+  {
+    "id": 9,
+    "name": "Sistema de Inventario Inteligente",
+    "description": "Gestión automatizada de inventario con predicción de demanda y optimización de stock.",
+    "owner_id": 8,
+    "created_at": "2025-09-07T09:09:26.607747+00:00",
+    "updated_at": "2025-09-22T09:05:01.373176+00:00"
+  },
+  {
+    "id": 8,
+    "name": "Plataforma de E-learning",
+    "description": "Sistema de aprendizaje en línea con cursos interactivos, evaluaciones y certificaciones.",
+    "owner_id": 6,
+    "created_at": "2025-09-07T09:09:26.586462+00:00",
+    "updated_at": "2025-09-22T09:05:01.388529+00:00"
+  },
+  {
+    "id": 7,
+    "name": "Sistema de Monitoreo IoT",
+    "description": "Plataforma para monitoreo de dispositivos IoT con alertas en tiempo real y análisis predictivo.",
+    "owner_id": 10,
+    "created_at": "2025-09-07T09:09:26.568754+00:00",
+    "updated_at": "2025-09-22T09:05:01.403680+00:00"
+  },
+  {
+    "id": 6,
+    "name": "Portal de Recursos Humanos",
+    "description": "Sistema web para gestión de empleados, nóminas, vacaciones y evaluación de desempeño.",
+    "owner_id": 9,
+    "created_at": "2025-09-07T09:09:26.548890+00:00",
+    "updated_at": "2025-09-22T09:05:01.418286+00:00"
+  },
+  {
+    "id": 5,
+    "name": "API de Integración Financiera",
+    "description": "API REST para integración con sistemas bancarios y procesamiento de transacciones financieras.",
+    "owner_id": 2,
+    "created_at": "2025-09-07T09:09:26.529111+00:00",
+    "updated_at": "2025-09-22T09:05:01.434826+00:00"
+  },
+  {
+    "id": 4,
+    "name": "Sistema de Gestión Documental",
+    "description": "Plataforma para gestión, almacenamiento y búsqueda de documentos corporativos con control de versiones.",
+    "owner_id": 10,
+    "created_at": "2025-09-07T09:09:26.511392+00:00",
+    "updated_at": "2025-09-22T09:05:01.451422+00:00"
+  },
+  {
+    "id": 3,
+    "name": "App Móvil E-commerce",
+    "description": "Aplicación móvil nativa para comercio electrónico con integración de pagos y gestión de inventario.",
+    "owner_id": 7,
+    "created_at": "2025-09-07T09:09:26.492612+00:00",
+    "updated_at": "2025-09-22T09:05:01.471308+00:00"
+  },
+  {
+    "id": 2,
+    "name": "Dashboard Analytics Empresarial",
+    "description": "Plataforma de análisis de datos en tiempo real con visualizaciones interactivas y reportes automatizados.",
+    "owner_id": 6,
+    "created_at": "2025-09-07T09:09:26.475762+00:00",
+    "updated_at": "2025-09-22T09:05:01.490889+00:00"
+  },
+  {
+    "id": 1,
+    "name": "Sistema CRM Avanzado",
+    "description": "Desarrollo de un sistema CRM completo con funcionalidades de gestión de clientes, ventas y marketing automatizado.",
+    "owner_id": 9,
+    "created_at": "2025-09-07T09:09:26.455533+00:00",
+    "updated_at": "2025-09-22T09:05:01.508834+00:00"
+  }
+]

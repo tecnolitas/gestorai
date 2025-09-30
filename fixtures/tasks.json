@@ -1,0 +1,422 @@
+[
+  {
+    "model": "tasks.task",
+    "pk": 1,
+    "fields": {
+      "title": "Configurar autenticación JWT",
+      "description": "Implementar sistema de autenticación JWT para la API con refresh tokens y manejo de sesiones.",
+      "completed": true,
+      "priority": "high",
+      "created_at": "2024-01-16T09:00:00Z",
+      "due_date": "2024-01-25T17:00:00Z",
+      "project": 1,
+      "assignee": 2
+    }
+  },
+  {
+    "model": "tasks.task",
+    "pk": 2,
+    "fields": {
+      "title": "Diseñar base de datos",
+      "description": "Crear el esquema de base de datos con todas las tablas necesarias para usuarios, proyectos y tareas.",
+      "completed": true,
+      "priority": "high",
+      "created_at": "2024-01-17T10:30:00Z",
+      "due_date": "2024-01-22T17:00:00Z",
+      "project": 1,
+      "assignee": 1
+    }
+  },
+  {
+    "model": "tasks.task",
+    "pk": 3,
+    "fields": {
+      "title": "Implementar CRUD de proyectos",
+      "description": "Crear las operaciones CRUD completas para el modelo de proyectos con validaciones.",
+      "completed": true,
+      "priority": "medium",
+      "created_at": "2024-01-18T14:15:00Z",
+      "due_date": "2024-01-28T17:00:00Z",
+      "project": 1,
+      "assignee": 3
+    }
+  },
+  {
+    "model": "tasks.task",
+    "pk": 4,
+    "fields": {
+      "title": "Crear interfaz de usuario",
+      "description": "Desarrollar la interfaz de usuario responsive usando React y Tailwind CSS.",
+      "completed": false,
+      "priority": "high",
+      "created_at": "2024-01-19T11:45:00Z",
+      "due_date": "2024-02-05T17:00:00Z",
+      "project": 1,
+      "assignee": 4
+    }
+  },
+  {
+    "model": "tasks.task",
+    "pk": 5,
+    "fields": {
+      "title": "Implementar sistema de comentarios",
+      "description": "Agregar funcionalidad de comentarios a las tareas con notificaciones en tiempo real.",
+      "completed": false,
+      "priority": "medium",
+      "created_at": "2024-01-20T16:20:00Z",
+      "due_date": "2024-02-10T17:00:00Z",
+      "project": 1,
+      "assignee": 5
+    }
+  },
+  {
+    "model": "tasks.task",
+    "pk": 6,
+    "fields": {
+      "title": "Configurar carrito de compras",
+      "description": "Implementar funcionalidad de carrito de compras con persistencia de sesión.",
+      "completed": true,
+      "priority": "high",
+      "created_at": "2024-01-21T09:30:00Z",
+      "due_date": "2024-01-30T17:00:00Z",
+      "project": 2,
+      "assignee": 2
+    }
+  },
+  {
+    "model": "tasks.task",
+    "pk": 7,
+    "fields": {
+      "title": "Integrar pasarela de pagos",
+      "description": "Conectar con Stripe para procesar pagos de forma segura.",
+      "completed": false,
+      "priority": "high",
+      "created_at": "2024-01-22T13:45:00Z",
+      "due_date": "2024-02-08T17:00:00Z",
+      "project": 2,
+      "assignee": 3
+    }
+  },
+  {
+    "model": "tasks.task",
+    "pk": 8,
+    "fields": {
+      "title": "Crear sistema de inventario",
+      "description": "Desarrollar módulo de gestión de inventario con alertas de stock bajo.",
+      "completed": false,
+      "priority": "medium",
+      "created_at": "2024-01-23T10:15:00Z",
+      "due_date": "2024-02-15T17:00:00Z",
+      "project": 2,
+      "assignee": 4
+    }
+  },
+  {
+    "model": "tasks.task",
+    "pk": 9,
+    "fields": {
+      "title": "Diseñar UI de la app móvil",
+      "description": "Crear mockups y prototipos de la interfaz de usuario para la aplicación móvil.",
+      "completed": true,
+      "priority": "medium",
+      "created_at": "2024-02-02T08:30:00Z",
+      "due_date": "2024-02-12T17:00:00Z",
+      "project": 3,
+      "assignee": 6
+    }
+  },
+  {
+    "model": "tasks.task",
+    "pk": 10,
+    "fields": {
+      "title": "Implementar tracking de ejercicios",
+      "description": "Desarrollar funcionalidad para registrar y seguir el progreso de ejercicios.",
+      "completed": false,
+      "priority": "high",
+      "created_at": "2024-02-03T14:20:00Z",
+      "due_date": "2024-02-20T17:00:00Z",
+      "project": 3,
+      "assignee": 3
+    }
+  },
+  {
+    "model": "tasks.task",
+    "pk": 11,
+    "fields": {
+      "title": "Configurar base de datos de reservas",
+      "description": "Crear esquema de base de datos para gestionar reservas, mesas y horarios.",
+      "completed": true,
+      "priority": "high",
+      "created_at": "2024-02-06T13:45:00Z",
+      "due_date": "2024-02-15T17:00:00Z",
+      "project": 4,
+      "assignee": 4
+    }
+  },
+  {
+    "model": "tasks.task",
+    "pk": 12,
+    "fields": {
+      "title": "Implementar confirmaciones automáticas",
+      "description": "Sistema de envío de confirmaciones por email y SMS para reservas.",
+      "completed": false,
+      "priority": "medium",
+      "created_at": "2024-02-07T11:30:00Z",
+      "due_date": "2024-02-25T17:00:00Z",
+      "project": 4,
+      "assignee": 5
+    }
+  },
+  {
+    "model": "tasks.task",
+    "pk": 13,
+    "fields": {
+      "title": "Crear dashboard de métricas",
+      "description": "Desarrollar panel de control con gráficos y KPIs principales.",
+      "completed": false,
+      "priority": "high",
+      "created_at": "2024-02-11T10:00:00Z",
+      "due_date": "2024-02-28T17:00:00Z",
+      "project": 5,
+      "assignee": 5
+    }
+  },
+  {
+    "model": "tasks.task",
+    "pk": 14,
+    "fields": {
+      "title": "Integrar fuentes de datos",
+      "description": "Conectar con APIs externas para obtener datos en tiempo real.",
+      "completed": false,
+      "priority": "medium",
+      "created_at": "2024-02-12T15:45:00Z",
+      "due_date": "2024-03-05T17:00:00Z",
+      "project": 5,
+      "assignee": 7
+    }
+  },
+  {
+    "model": "tasks.task",
+    "pk": 15,
+    "fields": {
+      "title": "Configurar sistema de comentarios",
+      "description": "Implementar funcionalidad de comentarios con moderación automática.",
+      "completed": true,
+      "priority": "low",
+      "created_at": "2024-02-16T15:20:00Z",
+      "due_date": "2024-02-25T17:00:00Z",
+      "project": 6,
+      "assignee": 6
+    }
+  },
+  {
+    "model": "tasks.task",
+    "pk": 16,
+    "fields": {
+      "title": "Optimizar SEO",
+      "description": "Implementar meta tags, sitemap y optimización para motores de búsqueda.",
+      "completed": false,
+      "priority": "medium",
+      "created_at": "2024-02-17T09:15:00Z",
+      "due_date": "2024-03-10T17:00:00Z",
+      "project": 6,
+      "assignee": 8
+    }
+  },
+  {
+    "model": "tasks.task",
+    "pk": 17,
+    "fields": {
+      "title": "Implementar códigos de barras",
+      "description": "Sistema de generación y lectura de códigos de barras para productos.",
+      "completed": false,
+      "priority": "high",
+      "created_at": "2024-02-21T12:10:00Z",
+      "due_date": "2024-03-15T17:00:00Z",
+      "project": 7,
+      "assignee": 7
+    }
+  },
+  {
+    "model": "tasks.task",
+    "pk": 18,
+    "fields": {
+      "title": "Crear reportes de ventas",
+      "description": "Desarrollar módulo de reportes con gráficos y exportación a Excel.",
+      "completed": false,
+      "priority": "medium",
+      "created_at": "2024-02-22T14:30:00Z",
+      "due_date": "2024-03-20T17:00:00Z",
+      "project": 7,
+      "assignee": 5
+    }
+  },
+  {
+    "model": "tasks.task",
+    "pk": 19,
+    "fields": {
+      "title": "Configurar sistema de videos",
+      "description": "Implementar reproductor de videos con streaming y calidad adaptativa.",
+      "completed": false,
+      "priority": "high",
+      "created_at": "2024-03-02T09:30:00Z",
+      "due_date": "2024-03-25T17:00:00Z",
+      "project": 8,
+      "assignee": 8
+    }
+  },
+  {
+    "model": "tasks.task",
+    "pk": 20,
+    "fields": {
+      "title": "Crear sistema de certificados",
+      "description": "Generación automática de certificados de finalización de cursos.",
+      "completed": false,
+      "priority": "medium",
+      "created_at": "2024-03-03T11:45:00Z",
+      "due_date": "2024-03-30T17:00:00Z",
+      "project": 8,
+      "assignee": 6
+    }
+  },
+  {
+    "model": "tasks.task",
+    "pk": 21,
+    "fields": {
+      "title": "Implementar seguimiento GPS",
+      "description": "Sistema de seguimiento en tiempo real para entregas con notificaciones.",
+      "completed": false,
+      "priority": "high",
+      "created_at": "2024-03-06T14:15:00Z",
+      "due_date": "2024-04-05T17:00:00Z",
+      "project": 9,
+      "assignee": 2
+    }
+  },
+  {
+    "model": "tasks.task",
+    "pk": 22,
+    "fields": {
+      "title": "Crear sistema de pagos",
+      "description": "Integración con múltiples métodos de pago (tarjeta, efectivo, transferencia).",
+      "completed": false,
+      "priority": "high",
+      "created_at": "2024-03-07T10:30:00Z",
+      "due_date": "2024-04-10T17:00:00Z",
+      "project": 9,
+      "assignee": 3
+    }
+  },
+  {
+    "model": "tasks.task",
+    "pk": 23,
+    "fields": {
+      "title": "Configurar facturación electrónica",
+      "description": "Implementar sistema de facturación que cumpla con regulaciones fiscales.",
+      "completed": false,
+      "priority": "high",
+      "created_at": "2024-03-09T11:45:00Z",
+      "due_date": "2024-04-15T17:00:00Z",
+      "project": 10,
+      "assignee": 3
+    }
+  },
+  {
+    "model": "tasks.task",
+    "pk": 24,
+    "fields": {
+      "title": "Crear gestión de clientes",
+      "description": "Sistema de gestión de clientes con historial de compras y preferencias.",
+      "completed": false,
+      "priority": "medium",
+      "created_at": "2024-03-10T13:20:00Z",
+      "due_date": "2024-04-20T17:00:00Z",
+      "project": 10,
+      "assignee": 4
+    }
+  },
+  {
+    "model": "tasks.task",
+    "pk": 25,
+    "fields": {
+      "title": "Implementar chat en tiempo real",
+      "description": "Sistema de mensajería instantánea con notificaciones push.",
+      "completed": false,
+      "priority": "high",
+      "created_at": "2024-03-11T08:20:00Z",
+      "due_date": "2024-04-25T17:00:00Z",
+      "project": 11,
+      "assignee": 4
+    }
+  },
+  {
+    "model": "tasks.task",
+    "pk": 26,
+    "fields": {
+      "title": "Crear sistema de archivos",
+      "description": "Almacenamiento y compartir archivos con control de permisos.",
+      "completed": false,
+      "priority": "medium",
+      "created_at": "2024-03-12T15:10:00Z",
+      "due_date": "2024-04-30T17:00:00Z",
+      "project": 11,
+      "assignee": 7
+    }
+  },
+  {
+    "model": "tasks.task",
+    "pk": 27,
+    "fields": {
+      "title": "Implementar seguimiento de leads",
+      "description": "Sistema de seguimiento de leads con scoring y automatización.",
+      "completed": false,
+      "priority": "high",
+      "created_at": "2024-03-13T16:30:00Z",
+      "due_date": "2024-05-05T17:00:00Z",
+      "project": 12,
+      "assignee": 5
+    }
+  },
+  {
+    "model": "tasks.task",
+    "pk": 28,
+    "fields": {
+      "title": "Crear reportes de ventas",
+      "description": "Dashboard con métricas de ventas y proyecciones.",
+      "completed": false,
+      "priority": "medium",
+      "created_at": "2024-03-14T10:45:00Z",
+      "due_date": "2024-05-10T17:00:00Z",
+      "project": 12,
+      "assignee": 8
+    }
+  },
+  {
+    "model": "tasks.task",
+    "pk": 29,
+    "fields": {
+      "title": "Optimizar rendimiento de la API",
+      "description": "Implementar caché, paginación y optimización de consultas.",
+      "completed": false,
+      "priority": "medium",
+      "created_at": "2024-03-15T09:00:00Z",
+      "due_date": "2024-03-30T17:00:00Z",
+      "project": 1,
+      "assignee": 1
+    }
+  },
+  {
+    "model": "tasks.task",
+    "pk": 30,
+    "fields": {
+      "title": "Implementar tests unitarios",
+      "description": "Crear suite completa de tests unitarios para todos los modelos.",
+      "completed": false,
+      "priority": "low",
+      "created_at": "2024-03-15T11:30:00Z",
+      "due_date": "2024-04-05T17:00:00Z",
+      "project": 1,
+      "assignee": 2
+    }
+  }
+] 

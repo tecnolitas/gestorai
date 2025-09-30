@@ -1,0 +1,222 @@
+[
+  {
+    "model": "tasks.comment",
+    "pk": 1,
+    "fields": {
+      "task": 1,
+      "user": 2,
+      "content": "He configurado la autenticación JWT con refresh tokens. Los tokens expiran en 1 hora y los refresh tokens en 7 días. ¿Quieres que ajuste algún parámetro?",
+      "created_at": "2024-01-16T15:30:00Z",
+      "updated_at": "2024-01-16T15:30:00Z"
+    }
+  },
+  {
+    "model": "tasks.comment",
+    "pk": 2,
+    "fields": {
+      "task": 1,
+      "user": 1,
+      "content": "Perfecto, los parámetros están bien. ¿Ya probaste el flujo completo de login/logout?",
+      "created_at": "2024-01-16T16:45:00Z",
+      "updated_at": "2024-01-16T16:45:00Z"
+    }
+  },
+  {
+    "model": "tasks.comment",
+    "pk": 3,
+    "fields": {
+      "task": 2,
+      "user": 1,
+      "content": "He diseñado el esquema de base de datos con todas las relaciones necesarias. Incluye índices para optimizar las consultas más frecuentes.",
+      "created_at": "2024-01-17T12:00:00Z",
+      "updated_at": "2024-01-17T12:00:00Z"
+    }
+  },
+  {
+    "model": "tasks.comment",
+    "pk": 4,
+    "fields": {
+      "task": 3,
+      "user": 3,
+      "content": "CRUD de proyectos implementado con validaciones completas. Incluye permisos para que solo el propietario pueda editar/eliminar.",
+      "created_at": "2024-01-18T17:30:00Z",
+      "updated_at": "2024-01-18T17:30:00Z"
+    }
+  },
+  {
+    "model": "tasks.comment",
+    "pk": 5,
+    "fields": {
+      "task": 4,
+      "user": 4,
+      "content": "Empezando con el diseño de la interfaz. Voy a usar Tailwind CSS para un diseño moderno y responsive. ¿Tienes alguna preferencia de colores?",
+      "created_at": "2024-01-19T14:20:00Z",
+      "updated_at": "2024-01-19T14:20:00Z"
+    }
+  },
+  {
+    "model": "tasks.comment",
+    "pk": 6,
+    "fields": {
+      "task": 4,
+      "user": 1,
+      "content": "Me gusta la paleta de azules y grises. Asegúrate de que sea accesible y tenga buen contraste.",
+      "created_at": "2024-01-19T15:10:00Z",
+      "updated_at": "2024-01-19T15:10:00Z"
+    }
+  },
+  {
+    "model": "tasks.comment",
+    "pk": 7,
+    "fields": {
+      "task": 6,
+      "user": 2,
+      "content": "Carrito de compras implementado con persistencia en localStorage. También agregué funcionalidad para guardar carritos de usuarios autenticados.",
+      "created_at": "2024-01-21T11:45:00Z",
+      "updated_at": "2024-01-21T11:45:00Z"
+    }
+  },
+  {
+    "model": "tasks.comment",
+    "pk": 8,
+    "fields": {
+      "task": 7,
+      "user": 3,
+      "content": "Integrando Stripe. Necesito las claves de API para el entorno de pruebas. ¿Las tienes disponibles?",
+      "created_at": "2024-01-22T16:30:00Z",
+      "updated_at": "2024-01-22T16:30:00Z"
+    }
+  },
+  {
+    "model": "tasks.comment",
+    "pk": 9,
+    "fields": {
+      "task": 7,
+      "user": 2,
+      "content": "Te envío las claves por mensaje privado. Usa el modo de pruebas para no procesar pagos reales.",
+      "created_at": "2024-01-22T17:15:00Z",
+      "updated_at": "2024-01-22T17:15:00Z"
+    }
+  },
+  {
+    "model": "tasks.comment",
+    "pk": 10,
+    "fields": {
+      "task": 9,
+      "user": 6,
+      "content": "Mockups de la app móvil terminados. Incluyen todas las pantallas principales: login, dashboard, ejercicios, perfil y configuración.",
+      "created_at": "2024-02-02T10:30:00Z",
+      "updated_at": "2024-02-02T10:30:00Z"
+    }
+  },
+  {
+    "model": "tasks.comment",
+    "pk": 11,
+    "fields": {
+      "task": 10,
+      "user": 3,
+      "content": "Implementando el tracking de ejercicios. Voy a usar sensores del dispositivo para detectar movimientos automáticamente.",
+      "created_at": "2024-02-03T16:45:00Z",
+      "updated_at": "2024-02-03T16:45:00Z"
+    }
+  },
+  {
+    "model": "tasks.comment",
+    "pk": 12,
+    "fields": {
+      "task": 11,
+      "user": 4,
+      "content": "Base de datos de reservas configurada. Incluye tablas para restaurantes, mesas, horarios y reservas con validaciones de disponibilidad.",
+      "created_at": "2024-02-06T15:20:00Z",
+      "updated_at": "2024-02-06T15:20:00Z"
+    }
+  },
+  {
+    "model": "tasks.comment",
+    "pk": 13,
+    "fields": {
+      "task": 12,
+      "user": 5,
+      "content": "Sistema de confirmaciones implementado. Usa Twilio para SMS y SendGrid para emails. ¿Quieres que agregue confirmaciones por WhatsApp también?",
+      "created_at": "2024-02-07T13:10:00Z",
+      "updated_at": "2024-02-07T13:10:00Z"
+    }
+  },
+  {
+    "model": "tasks.comment",
+    "pk": 14,
+    "fields": {
+      "task": 13,
+      "user": 5,
+      "content": "Dashboard de métricas en desarrollo. Voy a usar Chart.js para los gráficos. ¿Qué KPIs son los más importantes para mostrar?",
+      "created_at": "2024-02-11T12:00:00Z",
+      "updated_at": "2024-02-11T12:00:00Z"
+    }
+  },
+  {
+    "model": "tasks.comment",
+    "pk": 15,
+    "fields": {
+      "task": 15,
+      "user": 6,
+      "content": "Sistema de comentarios configurado con moderación automática usando palabras clave. También agregué sistema de reportes para comentarios inapropiados.",
+      "created_at": "2024-02-16T17:30:00Z",
+      "updated_at": "2024-02-16T17:30:00Z"
+    }
+  },
+  {
+    "model": "tasks.comment",
+    "pk": 16,
+    "fields": {
+      "task": 16,
+      "user": 8,
+      "content": "Optimización SEO en progreso. Implementando meta tags dinámicos, sitemap automático y optimización de imágenes.",
+      "created_at": "2024-02-17T11:45:00Z",
+      "updated_at": "2024-02-17T11:45:00Z"
+    }
+  },
+  {
+    "model": "tasks.comment",
+    "pk": 17,
+    "fields": {
+      "task": 17,
+      "user": 7,
+      "content": "Sistema de códigos de barras implementado. Usa la librería ZXing para generar y leer códigos QR y de barras.",
+      "created_at": "2024-02-21T14:20:00Z",
+      "updated_at": "2024-02-21T14:20:00Z"
+    }
+  },
+  {
+    "model": "tasks.comment",
+    "pk": 18,
+    "fields": {
+      "task": 18,
+      "user": 5,
+      "content": "Reportes de ventas en desarrollo. Incluiré gráficos de tendencias, comparativas mensuales y exportación a Excel.",
+      "created_at": "2024-02-22T16:15:00Z",
+      "updated_at": "2024-02-22T16:15:00Z"
+    }
+  },
+  {
+    "model": "tasks.comment",
+    "pk": 19,
+    "fields": {
+      "task": 19,
+      "user": 8,
+      "content": "Sistema de videos configurado con streaming adaptativo. Usa HLS para compatibilidad con todos los dispositivos.",
+      "created_at": "2024-03-02T11:30:00Z",
+      "updated_at": "2024-03-02T11:30:00Z"
+    }
+  },
+  {
+    "model": "tasks.comment",
+    "pk": 20,
+    "fields": {
+      "task": 20,
+      "user": 6,
+      "content": "Sistema de certificados implementado. Genera PDFs automáticamente con el logo de la empresa y firma digital.",
+      "created_at": "2024-03-03T13:45:00Z",
+      "updated_at": "2024-03-03T13:45:00Z"
+    }
+  }
+] 

@@ -1,0 +1,336 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+  --card: #ffffff;
+  --card-foreground: #171717;
+  --popover: #ffffff;
+  --popover-foreground: #171717;
+  --primary: #3b82f6;
+  --primary-foreground: #ffffff;
+  --secondary: #f1f5f9;
+  --secondary-foreground: #0f172a;
+  --muted: #f1f5f9;
+  --muted-foreground: #64748b;
+  --accent: #f1f5f9;
+  --accent-foreground: #0f172a;
+  --destructive: #ef4444;
+  --destructive-foreground: #ffffff;
+  --border: #e2e8f0;
+  --input: #ffffff;
+  --ring: #3b82f6;
+  --radius: 0.5rem;
+}
+
+.dark {
+  --background: #0f172a;
+  --foreground: #f8fafc;
+  --card: #1e293b;
+  --card-foreground: #f8fafc;
+  --popover: #1e293b;
+  --popover-foreground: #f8fafc;
+  --primary: #3b82f6;
+  --primary-foreground: #ffffff;
+  --secondary: #334155;
+  --secondary-foreground: #f1f5f9;
+  --muted: #334155;
+  --muted-foreground: #94a3b8;
+  --accent: #334155;
+  --accent-foreground: #f1f5f9;
+  --destructive: #ef4444;
+  --destructive-foreground: #ffffff;
+  --border: #475569;
+  --input: #1e293b;
+  --ring: #3b82f6;
+}
+
+@theme {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --radius: var(--radius);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+
+
+/* Scrollbar personalizado para tema claro */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+/* Scrollbar personalizado para tema oscuro */
+.dark ::-webkit-scrollbar-track {
+  background: #334155;
+}
+
+.dark ::-webkit-scrollbar-thumb {
+  background: #64748b;
+}
+
+.dark ::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+/* Para Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #cbd5e1 #f1f5f9;
+}
+
+.dark * {
+  scrollbar-color: #64748b #334155;
+}
+
+/* Estilos para Kanban Drag & Drop */
+.kanban-column.drag-over {
+  background-color: var(--accent) !important;
+  border: 2px dashed var(--primary);
+  transition: all 0.2s ease;
+}
+
+.kanban-column.drag-over::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(59, 130, 246, 0.1);
+  border-radius: 0.5rem;
+  pointer-events: none;
+}
+
+/* Animaciones para las tarjetas de tareas */
+@keyframes taskAppear {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.kanban-column .space-y-3 > div {
+  animation: taskAppear 0.3s ease-out;
+}
+
+/* Estilos para el estado de arrastre */
+.kanban-column .space-y-3 > div:active {
+  cursor: grabbing;
+}
+
+/* Mejoras visuales para el drag overlay */
+[data-dnd-kit-dragging] {
+  z-index: 1000;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Estilos personalizados para FullCalendar */
+.fc {
+  font-family: inherit;
+}
+
+/* Tema claro */
+:root {
+  --fc-border-color: #e5e7eb;
+  --fc-button-text-color: #374151;
+  --fc-button-bg-color: #f9fafb;
+  --fc-button-border-color: #d1d5db;
+  --fc-button-hover-bg-color: #f3f4f6;
+  --fc-button-hover-border-color: #9ca3af;
+  --fc-button-active-bg-color: #3b82f6;
+  --fc-button-active-border-color: #3b82f6;
+  --fc-button-active-text-color: #ffffff;
+  --fc-event-bg-color: #3b82f6;
+  --fc-event-border-color: #3b82f6;
+  --fc-event-text-color: #ffffff;
+  --fc-today-bg-color: #eff6ff;
+  --fc-neutral-bg-color: #f9fafb;
+  --fc-neutral-text-color: #6b7280;
+  --fc-highlight-color: rgba(59, 130, 246, 0.1);
+}
+
+/* Tema oscuro */
+[data-theme="dark"] {
+  --fc-border-color: #374151;
+  --fc-button-text-color: #d1d5db;
+  --fc-button-bg-color: #374151;
+  --fc-button-border-color: #4b5563;
+  --fc-button-hover-bg-color: #4b5563;
+  --fc-button-hover-border-color: #6b7280;
+  --fc-button-active-bg-color: #3b82f6;
+  --fc-button-active-border-color: #3b82f6;
+  --fc-button-active-text-color: #ffffff;
+  --fc-event-bg-color: #3b82f6;
+  --fc-event-border-color: #3b82f6;
+  --fc-event-text-color: #ffffff;
+  --fc-today-bg-color: #1e3a8a;
+  --fc-neutral-bg-color: #374151;
+  --fc-neutral-text-color: #9ca3af;
+  --fc-highlight-color: rgba(59, 130, 246, 0.2);
+}
+
+/* Aplicar variables CSS a FullCalendar */
+.fc .fc-button {
+  background-color: var(--fc-button-bg-color) !important;
+  border-color: var(--fc-button-border-color) !important;
+  color: var(--fc-button-text-color) !important;
+}
+
+.fc .fc-button:hover {
+  background-color: var(--fc-button-hover-bg-color) !important;
+  border-color: var(--fc-button-hover-border-color) !important;
+}
+
+.fc .fc-button:active,
+.fc .fc-button.fc-button-active {
+  background-color: var(--fc-button-active-bg-color) !important;
+  border-color: var(--fc-button-active-border-color) !important;
+  color: var(--fc-button-active-text-color) !important;
+}
+
+.fc .fc-toolbar {
+  color: var(--foreground) !important;
+}
+
+.fc .fc-toolbar-title {
+  color: var(--foreground) !important;
+  font-weight: 600 !important;
+}
+
+.fc .fc-col-header-cell {
+  background-color: var(--card) !important;
+  border-color: var(--fc-border-color) !important;
+}
+
+.fc .fc-col-header-cell-cushion {
+  color: var(--foreground) !important;
+  font-weight: 600 !important;
+}
+
+.fc .fc-daygrid-day {
+  background-color: var(--card) !important;
+  border-color: var(--fc-border-color) !important;
+}
+
+.fc .fc-daygrid-day-number {
+  color: var(--foreground) !important;
+}
+
+.fc .fc-day-today {
+  background-color: var(--fc-today-bg-color) !important;
+}
+
+.fc .fc-day-other {
+  background-color: var(--fc-neutral-bg-color) !important;
+}
+
+.fc .fc-day-other .fc-daygrid-day-number {
+  color: var(--fc-neutral-text-color) !important;
+}
+
+.fc .fc-event {
+  background-color: var(--fc-event-bg-color) !important;
+  border-color: var(--fc-event-border-color) !important;
+  color: var(--fc-event-text-color) !important;
+}
+
+.fc .fc-highlight {
+  background-color: var(--fc-highlight-color) !important;
+}
+
+.fc .fc-timegrid-slot {
+  border-color: var(--fc-border-color) !important;
+}
+
+.fc .fc-timegrid-slot-label {
+  color: var(--muted-foreground) !important;
+}
+
+.fc .fc-timegrid-axis {
+  background-color: var(--card) !important;
+  border-color: var(--fc-border-color) !important;
+}
+
+.fc .fc-timegrid-axis-cushion {
+  color: var(--foreground) !important;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .fc .fc-toolbar {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .fc .fc-toolbar-chunk {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+/* Estilos para eventos por prioridad */
+.fc-event.priority-high {
+  background-color: #ef4444 !important;
+  border-color: #ef4444 !important;
+}
+
+.fc-event.priority-medium {
+  background-color: #f59e0b !important;
+  border-color: #f59e0b !important;
+}
+
+.fc-event.priority-low {
+  background-color: #10b981 !important;
+  border-color: #10b981 !important;
+}
+
+.fc-event.completed {
+  background-color: #10b981 !important;
+  border-color: #10b981 !important;
+  opacity: 0.8;
+}

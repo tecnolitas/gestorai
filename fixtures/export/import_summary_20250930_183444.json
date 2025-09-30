@@ -1,0 +1,18 @@
+{
+  "import_timestamp": "2025-09-30T18:36:03.071867",
+  "export_timestamp": "20250930_183444",
+  "imported_counts": {
+    "users": 10,
+    "projects": 27,
+    "tasks": 139,
+    "comments": 0,
+    "task_history": 12
+  },
+  "total_counts": {
+    "users": 10,
+    "projects": 27,
+    "tasks": 139,
+    "comments": 0,
+    "task_history": 12
+  }
+}

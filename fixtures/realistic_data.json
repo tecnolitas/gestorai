@@ -1,0 +1,724 @@
+[
+  {
+    "model": "auth.user",
+    "pk": 1,
+    "fields": {
+      "username": "admin",
+      "email": "admin@empresa.com",
+      "first_name": "Administrador",
+      "last_name": "Sistema",
+      "is_staff": true,
+      "is_superuser": true,
+      "is_active": true,
+      "date_joined": "2024-01-15T10:00:00Z"
+    }
+  },
+  {
+    "model": "auth.user",
+    "pk": 2,
+    "fields": {
+      "username": "maria.garcia",
+      "email": "maria.garcia@empresa.com",
+      "first_name": "María",
+      "last_name": "García",
+      "is_staff": false,
+      "is_superuser": false,
+      "is_active": true,
+      "date_joined": "2024-02-01T09:00:00Z"
+    }
+  },
+  {
+    "model": "auth.user",
+    "pk": 3,
+    "fields": {
+      "username": "carlos.lopez",
+      "email": "carlos.lopez@empresa.com",
+      "first_name": "Carlos",
+      "last_name": "López",
+      "is_staff": false,
+      "is_superuser": false,
+      "is_active": true,
+      "date_joined": "2024-02-15T08:30:00Z"
+    }
+  },
+  {
+    "model": "auth.user",
+    "pk": 4,
+    "fields": {
+      "username": "ana.martinez",
+      "email": "ana.martinez@empresa.com",
+      "first_name": "Ana",
+      "last_name": "Martínez",
+      "is_staff": false,
+      "is_superuser": false,
+      "is_active": true,
+      "date_joined": "2024-03-01T10:15:00Z"
+    }
+  },
+  {
+    "model": "auth.user",
+    "pk": 5,
+    "fields": {
+      "username": "david.rodriguez",
+      "email": "david.rodriguez@empresa.com",
+      "first_name": "David",
+      "last_name": "Rodríguez",
+      "is_staff": false,
+      "is_superuser": false,
+      "is_active": true,
+      "date_joined": "2024-03-10T11:00:00Z"
+    }
+  },
+  {
+    "model": "auth.user",
+    "pk": 6,
+    "fields": {
+      "username": "laura.sanchez",
+      "email": "laura.sanchez@empresa.com",
+      "first_name": "Laura",
+      "last_name": "Sánchez",
+      "is_staff": false,
+      "is_superuser": false,
+      "is_active": true,
+      "date_joined": "2024-03-20T09:45:00Z"
+    }
+  },
+  {
+    "model": "projects.project",
+    "pk": 1,
+    "fields": {
+      "name": "Sistema CRM Avanzado",
+      "description": "Desarrollo de un sistema CRM completo con funcionalidades de gestión de clientes, ventas y marketing automatizado.",
+      "created_at": "2024-01-15T10:00:00Z"
+    }
+  },
+  {
+    "model": "projects.project",
+    "pk": 2,
+    "fields": {
+      "name": "Dashboard Analytics Empresarial",
+      "description": "Plataforma de análisis de datos en tiempo real con visualizaciones interactivas y reportes automatizados.",
+      "created_at": "2024-02-01T09:00:00Z"
+    }
+  },
+  {
+    "model": "projects.project",
+    "pk": 3,
+    "fields": {
+      "name": "App Móvil E-commerce",
+      "description": "Aplicación móvil nativa para comercio electrónico con integración de pagos y gestión de inventario.",
+      "created_at": "2024-02-15T08:30:00Z"
+    }
+  },
+  {
+    "model": "projects.project",
+    "pk": 4,
+    "fields": {
+      "name": "Sistema de Gestión Documental",
+      "description": "Plataforma para gestión, almacenamiento y búsqueda de documentos corporativos con control de versiones.",
+      "created_at": "2024-03-01T10:15:00Z"
+    }
+  },
+  {
+    "model": "projects.project",
+    "pk": 5,
+    "fields": {
+      "name": "API de Integración Financiera",
+      "description": "API REST para integración con sistemas bancarios y procesamiento de transacciones financieras.",
+      "created_at": "2024-03-10T11:00:00Z"
+    }
+  },
+  {
+    "model": "projects.project",
+    "pk": 6,
+    "fields": {
+      "name": "Portal de Recursos Humanos",
+      "description": "Sistema web para gestión de empleados, nóminas, vacaciones y evaluación de desempeño.",
+      "created_at": "2024-03-20T09:45:00Z"
+    }
+  },
+  {
+    "model": "projects.project",
+    "pk": 7,
+    "fields": {
+      "name": "Sistema de Monitoreo IoT",
+      "description": "Plataforma para monitoreo de dispositivos IoT con alertas en tiempo real y análisis predictivo.",
+      "created_at": "2024-04-01T08:00:00Z"
+    }
+  },
+  {
+    "model": "projects.project",
+    "pk": 8,
+    "fields": {
+      "name": "Plataforma de E-learning",
+      "description": "Sistema de aprendizaje en línea con cursos interactivos, evaluaciones y certificaciones.",
+      "created_at": "2024-04-15T10:30:00Z"
+    }
+  },
+  {
+    "model": "tasks.task",
+    "pk": 1,
+    "fields": {
+      "title": "Diseño de base de datos",
+      "description": "Crear el esquema de base de datos para el sistema CRM con todas las entidades necesarias.",
+      "project": 1,
+      "assignee": 2,
+      "priority": "high",
+      "completed": true,
+      "created_at": "2024-01-20T10:00:00Z",
+      "due_date": "2024-02-05T17:00:00Z"
+    }
+  },
+  {
+    "model": "tasks.task",
+    "pk": 2,
+    "fields": {
+      "title": "Implementar autenticación",
+      "description": "Desarrollar sistema de login con JWT y gestión de sesiones seguras.",
+      "project": 1,
+      "assignee": 3,
+      "priority": "high",
+      "completed": true,
+      "created_at": "2024-01-25T09:00:00Z",
+      "due_date": "2024-02-10T17:00:00Z"
+    }
+  },
+  {
+    "model": "tasks.task",
+    "pk": 3,
+    "fields": {
+      "title": "API de gestión de clientes",
+      "description": "Crear endpoints REST para CRUD de clientes con validaciones y filtros avanzados.",
+      "project": 1,
+      "assignee": 2,
+      "priority": "high",
+      "completed": true,
+      "created_at": "2024-02-01T11:00:00Z",
+      "due_date": "2024-02-15T17:00:00Z"
+    }
+  },
+  {
+    "model": "tasks.task",
+    "pk": 4,
+    "fields": {
+      "title": "Interfaz de usuario principal",
+      "description": "Desarrollar dashboard principal con navegación y componentes reutilizables.",
+      "project": 1,
+      "assignee": 4,
+      "priority": "medium",
+      "completed": true,
+      "created_at": "2024-02-05T14:00:00Z",
+      "due_date": "2024-02-20T17:00:00Z"
+    }
+  },
+  {
+    "model": "tasks.task",
+    "pk": 5,
+    "fields": {
+      "title": "Módulo de ventas",
+      "description": "Implementar funcionalidades de gestión de oportunidades y pipeline de ventas.",
+      "project": 1,
+      "assignee": 3,
+      "priority": "high",
+      "completed": false,
+      "created_at": "2024-02-10T10:00:00Z",
+      "due_date": "2024-02-25T17:00:00Z"
+    }
+  },
+  {
+    "model": "tasks.task",
+    "pk": 6,
+    "fields": {
+      "title": "Sistema de notificaciones",
+      "description": "Implementar notificaciones push y por email para eventos importantes.",
+      "project": 1,
+      "assignee": 5,
+      "priority": "medium",
+      "completed": false,
+      "created_at": "2024-02-15T13:00:00Z",
+      "due_date": "2024-03-01T17:00:00Z"
+    }
+  },
+  {
+    "model": "tasks.task",
+    "pk": 7,
+    "fields": {
+      "title": "Reportes y analytics",
+      "description": "Crear sistema de reportes con gráficos y métricas de rendimiento.",
+      "project": 1,
+      "assignee": 6,
+      "priority": "low",
+      "completed": false,
+      "created_at": "2024-02-20T09:00:00Z",
+      "due_date": "2024-03-10T17:00:00Z"
+    }
+  },
+  {
+    "model": "tasks.task",
+    "pk": 8,
+    "fields": {
+      "title": "Configuración de servidor",
+      "description": "Configurar servidor de producción con Docker y nginx.",
+      "project": 2,
+      "assignee": 2,
+      "priority": "high",
+      "completed": true,
+      "created_at": "2024-02-01T10:00:00Z",
+      "due_date": "2024-02-08T17:00:00Z"
+    }
+  },
+  {
+    "model": "tasks.task",
+    "pk": 9,
+    "fields": {
+      "title": "Integración con APIs externas",
+      "description": "Conectar con APIs de Google Analytics, Facebook Ads y otras plataformas.",
+      "project": 2,
+      "assignee": 3,
+      "priority": "high",
+      "completed": true,
+      "created_at": "2024-02-05T11:00:00Z",
+      "due_date": "2024-02-12T17:00:00Z"
+    }
+  },
+  {
+    "model": "tasks.task",
+    "pk": 10,
+    "fields": {
+      "title": "Dashboard principal",
+      "description": "Crear dashboard con widgets personalizables y métricas en tiempo real.",
+      "project": 2,
+      "assignee": 4,
+      "priority": "high",
+      "completed": true,
+      "created_at": "2024-02-08T14:00:00Z",
+      "due_date": "2024-02-15T17:00:00Z"
+    }
+  },
+  {
+    "model": "tasks.task",
+    "pk": 11,
+    "fields": {
+      "title": "Gráficos interactivos",
+      "description": "Implementar gráficos con Chart.js y D3.js para visualizaciones avanzadas.",
+      "project": 2,
+      "assignee": 6,
+      "priority": "medium",
+      "completed": true,
+      "created_at": "2024-02-12T09:00:00Z",
+      "due_date": "2024-02-20T17:00:00Z"
+    }
+  },
+  {
+    "model": "tasks.task",
+    "pk": 12,
+    "fields": {
+      "title": "Sistema de alertas",
+      "description": "Configurar alertas automáticas basadas en umbrales y patrones de datos.",
+      "project": 2,
+      "assignee": 5,
+      "priority": "medium",
+      "completed": false,
+      "created_at": "2024-02-18T13:00:00Z",
+      "due_date": "2024-02-25T17:00:00Z"
+    }
+  },
+  {
+    "model": "tasks.task",
+    "pk": 13,
+    "fields": {
+      "title": "Exportación de datos",
+      "description": "Implementar funcionalidad de exportación a Excel, PDF y CSV.",
+      "project": 2,
+      "assignee": 2,
+      "priority": "low",
+      "completed": false,
+      "created_at": "2024-02-22T10:00:00Z",
+      "due_date": "2024-03-05T17:00:00Z"
+    }
+  },
+  {
+    "model": "tasks.task",
+    "pk": 14,
+    "fields": {
+      "title": "Diseño de UI/UX",
+      "description": "Crear wireframes y prototipos para la aplicación móvil.",
+      "project": 3,
+      "assignee": 4,
+      "priority": "high",
+      "completed": true,
+      "created_at": "2024-02-15T10:00:00Z",
+      "due_date": "2024-02-22T17:00:00Z"
+    }
+  },
+  {
+    "model": "tasks.task",
+    "pk": 15,
+    "fields": {
+      "title": "Configuración React Native",
+      "description": "Configurar proyecto React Native con navegación y estado global.",
+      "project": 3,
+      "assignee": 3,
+      "priority": "high",
+      "completed": true,
+      "created_at": "2024-02-18T11:00:00Z",
+      "due_date": "2024-02-25T17:00:00Z"
+    }
+  },
+  {
+    "model": "tasks.task",
+    "pk": 16,
+    "fields": {
+      "title": "Pantalla de productos",
+      "description": "Desarrollar pantalla de catálogo de productos con filtros y búsqueda.",
+      "project": 3,
+      "assignee": 6,
+      "priority": "high",
+      "completed": true,
+      "created_at": "2024-02-22T14:00:00Z",
+      "due_date": "2024-03-01T17:00:00Z"
+    }
+  },
+  {
+    "model": "tasks.task",
+    "pk": 17,
+    "fields": {
+      "title": "Carrito de compras",
+      "description": "Implementar funcionalidad de carrito con persistencia local.",
+      "project": 3,
+      "assignee": 5,
+      "priority": "high",
+      "completed": false,
+      "created_at": "2024-02-25T09:00:00Z",
+      "due_date": "2024-03-05T17:00:00Z"
+    }
+  },
+  {
+    "model": "tasks.task",
+    "pk": 18,
+    "fields": {
+      "title": "Integración de pagos",
+      "description": "Integrar Stripe y PayPal para procesamiento de pagos.",
+      "project": 3,
+      "assignee": 2,
+      "priority": "high",
+      "completed": false,
+      "created_at": "2024-03-01T11:00:00Z",
+      "due_date": "2024-03-10T17:00:00Z"
+    }
+  },
+  {
+    "model": "tasks.task",
+    "pk": 19,
+    "fields": {
+      "title": "Push notifications",
+      "description": "Implementar notificaciones push para ofertas y actualizaciones.",
+      "project": 3,
+      "assignee": 5,
+      "priority": "medium",
+      "completed": false,
+      "created_at": "2024-03-05T13:00:00Z",
+      "due_date": "2024-03-15T17:00:00Z"
+    }
+  },
+  {
+    "model": "tasks.task",
+    "pk": 20,
+    "fields": {
+      "title": "Arquitectura de microservicios",
+      "description": "Diseñar arquitectura de microservicios para el sistema documental.",
+      "project": 4,
+      "assignee": 2,
+      "priority": "high",
+      "completed": true,
+      "created_at": "2024-03-01T10:00:00Z",
+      "due_date": "2024-03-08T17:00:00Z"
+    }
+  },
+  {
+    "model": "tasks.task",
+    "pk": 21,
+    "fields": {
+      "title": "API de documentos",
+      "description": "Crear API REST para gestión de documentos con versionado.",
+      "project": 4,
+      "assignee": 3,
+      "priority": "high",
+      "completed": true,
+      "created_at": "2024-03-05T11:00:00Z",
+      "due_date": "2024-03-12T17:00:00Z"
+    }
+  },
+  {
+    "model": "tasks.task",
+    "pk": 22,
+    "fields": {
+      "title": "Sistema de búsqueda",
+      "description": "Implementar búsqueda full-text con Elasticsearch.",
+      "project": 4,
+      "assignee": 6,
+      "priority": "medium",
+      "completed": false,
+      "created_at": "2024-03-10T14:00:00Z",
+      "due_date": "2024-03-20T17:00:00Z"
+    }
+  },
+  {
+    "model": "tasks.task",
+    "pk": 23,
+    "fields": {
+      "title": "Control de acceso",
+      "description": "Implementar sistema de permisos y roles para documentos.",
+      "project": 4,
+      "assignee": 4,
+      "priority": "high",
+      "completed": false,
+      "created_at": "2024-03-15T09:00:00Z",
+      "due_date": "2024-03-25T17:00:00Z"
+    }
+  },
+  {
+    "model": "tasks.task",
+    "pk": 24,
+    "fields": {
+      "title": "Interfaz web",
+      "description": "Desarrollar interfaz web para gestión y visualización de documentos.",
+      "project": 4,
+      "assignee": 4,
+      "priority": "medium",
+      "completed": false,
+      "created_at": "2024-03-20T13:00:00Z",
+      "due_date": "2024-04-01T17:00:00Z"
+    }
+  },
+  {
+    "model": "tasks.task",
+    "pk": 25,
+    "fields": {
+      "title": "Análisis de seguridad",
+      "description": "Realizar análisis de seguridad para la API financiera.",
+      "project": 5,
+      "assignee": 2,
+      "priority": "high",
+      "completed": true,
+      "created_at": "2024-03-10T10:00:00Z",
+      "due_date": "2024-03-15T17:00:00Z"
+    }
+  },
+  {
+    "model": "tasks.task",
+    "pk": 26,
+    "fields": {
+      "title": "Integración bancaria",
+      "description": "Conectar con APIs de bancos principales para transacciones.",
+      "project": 5,
+      "assignee": 3,
+      "priority": "high",
+      "completed": true,
+      "created_at": "2024-03-12T11:00:00Z",
+      "due_date": "2024-03-18T17:00:00Z"
+    }
+  },
+  {
+    "model": "tasks.task",
+    "pk": 27,
+    "fields": {
+      "title": "Validación de transacciones",
+      "description": "Implementar validaciones y verificaciones de seguridad.",
+      "project": 5,
+      "assignee": 5,
+      "priority": "high",
+      "completed": false,
+      "created_at": "2024-03-18T14:00:00Z",
+      "due_date": "2024-03-25T17:00:00Z"
+    }
+  },
+  {
+    "model": "tasks.task",
+    "pk": 28,
+    "fields": {
+      "title": "Documentación API",
+      "description": "Crear documentación completa con Swagger/OpenAPI.",
+      "project": 5,
+      "assignee": 6,
+      "priority": "medium",
+      "completed": false,
+      "created_at": "2024-03-22T09:00:00Z",
+      "due_date": "2024-04-01T17:00:00Z"
+    }
+  },
+  {
+    "model": "tasks.task",
+    "pk": 29,
+    "fields": {
+      "title": "Diseño de base de datos RRHH",
+      "description": "Crear esquema de base de datos para gestión de empleados.",
+      "project": 6,
+      "assignee": 2,
+      "priority": "high",
+      "completed": true,
+      "created_at": "2024-03-20T10:00:00Z",
+      "due_date": "2024-03-25T17:00:00Z"
+    }
+  },
+  {
+    "model": "tasks.task",
+    "pk": 30,
+    "fields": {
+      "title": "Módulo de nóminas",
+      "description": "Desarrollar sistema de cálculo y gestión de nóminas.",
+      "project": 6,
+      "assignee": 3,
+      "priority": "high",
+      "completed": false,
+      "created_at": "2024-03-25T11:00:00Z",
+      "due_date": "2024-04-05T17:00:00Z"
+    }
+  },
+  {
+    "model": "tasks.task",
+    "pk": 31,
+    "fields": {
+      "title": "Gestión de vacaciones",
+      "description": "Implementar sistema de solicitud y aprobación de vacaciones.",
+      "project": 6,
+      "assignee": 4,
+      "priority": "medium",
+      "completed": false,
+      "created_at": "2024-03-28T14:00:00Z",
+      "due_date": "2024-04-10T17:00:00Z"
+    }
+  },
+  {
+    "model": "tasks.task",
+    "pk": 32,
+    "fields": {
+      "title": "Evaluación de desempeño",
+      "description": "Crear sistema de evaluación 360 grados para empleados.",
+      "project": 6,
+      "assignee": 5,
+      "priority": "low",
+      "completed": false,
+      "created_at": "2024-04-01T09:00:00Z",
+      "due_date": "2024-04-15T17:00:00Z"
+    }
+  },
+  {
+    "model": "tasks.task",
+    "pk": 33,
+    "fields": {
+      "title": "Configuración IoT",
+      "description": "Configurar servidor para recepción de datos de sensores IoT.",
+      "project": 7,
+      "assignee": 2,
+      "priority": "high",
+      "completed": true,
+      "created_at": "2024-04-01T10:00:00Z",
+      "due_date": "2024-04-08T17:00:00Z"
+    }
+  },
+  {
+    "model": "tasks.task",
+    "pk": 34,
+    "fields": {
+      "title": "Dashboard de monitoreo",
+      "description": "Crear dashboard en tiempo real para visualización de datos IoT.",
+      "project": 7,
+      "assignee": 4,
+      "priority": "high",
+      "completed": false,
+      "created_at": "2024-04-05T11:00:00Z",
+      "due_date": "2024-04-12T17:00:00Z"
+    }
+  },
+  {
+    "model": "tasks.task",
+    "pk": 35,
+    "fields": {
+      "title": "Sistema de alertas",
+      "description": "Implementar alertas automáticas basadas en umbrales de sensores.",
+      "project": 7,
+      "assignee": 5,
+      "priority": "medium",
+      "completed": false,
+      "created_at": "2024-04-08T14:00:00Z",
+      "due_date": "2024-04-15T17:00:00Z"
+    }
+  },
+  {
+    "model": "tasks.task",
+    "pk": 36,
+    "fields": {
+      "title": "Análisis predictivo",
+      "description": "Desarrollar modelos de ML para predicción de fallos en dispositivos.",
+      "project": 7,
+      "assignee": 6,
+      "priority": "low",
+      "completed": false,
+      "created_at": "2024-04-12T09:00:00Z",
+      "due_date": "2024-04-25T17:00:00Z"
+    }
+  },
+  {
+    "model": "tasks.task",
+    "pk": 37,
+    "fields": {
+      "title": "Diseño de cursos",
+      "description": "Crear estructura y contenido base para cursos de e-learning.",
+      "project": 8,
+      "assignee": 4,
+      "priority": "high",
+      "completed": true,
+      "created_at": "2024-04-15T10:00:00Z",
+      "due_date": "2024-04-20T17:00:00Z"
+    }
+  },
+  {
+    "model": "tasks.task",
+    "pk": 38,
+    "fields": {
+      "title": "Sistema de usuarios",
+      "description": "Implementar registro, login y gestión de perfiles de estudiantes.",
+      "project": 8,
+      "assignee": 3,
+      "priority": "high",
+      "completed": false,
+      "created_at": "2024-04-18T11:00:00Z",
+      "due_date": "2024-04-25T17:00:00Z"
+    }
+  },
+  {
+    "model": "tasks.task",
+    "pk": 39,
+    "fields": {
+      "title": "Reproductor de video",
+      "description": "Desarrollar reproductor personalizado con controles avanzados.",
+      "project": 8,
+      "assignee": 6,
+      "priority": "medium",
+      "completed": false,
+      "created_at": "2024-04-20T14:00:00Z",
+      "due_date": "2024-04-30T17:00:00Z"
+    }
+  },
+  {
+    "model": "tasks.task",
+    "pk": 40,
+    "fields": {
+      "title": "Sistema de evaluaciones",
+      "description": "Crear sistema de exámenes y quizzes con calificación automática.",
+      "project": 8,
+      "assignee": 5,
+      "priority": "medium",
+      "completed": false,
+      "created_at": "2024-04-22T09:00:00Z",
+      "due_date": "2024-05-05T17:00:00Z"
+    }
+  }
+]
+
+
+
+
+
+

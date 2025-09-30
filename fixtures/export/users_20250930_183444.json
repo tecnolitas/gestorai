@@ -1,0 +1,122 @@
+[
+  {
+    "id": 1,
+    "username": "admin",
+    "email": "admin@empresa.com",
+    "first_name": "Administrador",
+    "last_name": "Sistema",
+    "is_active": true,
+    "is_staff": true,
+    "is_superuser": true,
+    "date_joined": "2025-09-07T09:09:23.881459+00:00",
+    "last_login": "2025-09-30T17:55:15.079179+00:00"
+  },
+  {
+    "id": 2,
+    "username": "maria.garcia",
+    "email": "maria.garcia@empresa.com",
+    "first_name": "María",
+    "last_name": "García",
+    "is_active": true,
+    "is_staff": false,
+    "is_superuser": false,
+    "date_joined": "2025-09-07T09:09:24.149758+00:00",
+    "last_login": null
+  },
+  {
+    "id": 3,
+    "username": "carlos.lopez",
+    "email": "carlos.lopez@empresa.com",
+    "first_name": "Carlos",
+    "last_name": "López",
+    "is_active": true,
+    "is_staff": false,
+    "is_superuser": false,
+    "date_joined": "2025-09-07T09:09:24.400446+00:00",
+    "last_login": null
+  },
+  {
+    "id": 4,
+    "username": "ana.martinez",
+    "email": "ana.martinez@empresa.com",
+    "first_name": "Ana",
+    "last_name": "Martínez",
+    "is_active": true,
+    "is_staff": false,
+    "is_superuser": false,
+    "date_joined": "2025-09-07T09:09:24.651345+00:00",
+    "last_login": null
+  },
+  {
+    "id": 5,
+    "username": "david.rodriguez",
+    "email": "david.rodriguez@empresa.com",
+    "first_name": "David",
+    "last_name": "Rodríguez",
+    "is_active": true,
+    "is_staff": false,
+    "is_superuser": false,
+    "date_joined": "2025-09-07T09:09:24.902640+00:00",
+    "last_login": null
+  },
+  {
+    "id": 6,
+    "username": "laura.sanchez",
+    "email": "laura.sanchez@empresa.com",
+    "first_name": "Laura",
+    "last_name": "Sánchez",
+    "is_active": true,
+    "is_staff": false,
+    "is_superuser": false,
+    "date_joined": "2025-09-07T09:09:25.158229+00:00",
+    "last_login": null
+  },
+  {
+    "id": 7,
+    "username": "jose.gonzalez",
+    "email": "jose.gonzalez@empresa.com",
+    "first_name": "José",
+    "last_name": "González",
+    "is_active": true,
+    "is_staff": false,
+    "is_superuser": false,
+    "date_joined": "2025-09-07T09:09:25.419574+00:00",
+    "last_login": null
+  },
+  {
+    "id": 8,
+    "username": "carmen.ruiz",
+    "email": "carmen.ruiz@empresa.com",
+    "first_name": "Carmen",
+    "last_name": "Ruiz",
+    "is_active": true,
+    "is_staff": false,
+    "is_superuser": false,
+    "date_joined": "2025-09-07T09:09:25.689495+00:00",
+    "last_login": null
+  },
+  {
+    "id": 9,
+    "username": "antonio.morales",
+    "email": "antonio.morales@empresa.com",
+    "first_name": "Antonio",
+    "last_name": "Morales",
+    "is_active": true,
+    "is_staff": false,
+    "is_superuser": false,
+    "date_joined": "2025-09-07T09:09:25.945583+00:00",
+    "last_login": null
+  },
+  {
+    "id": 10,
+    "username": "isabel.jimenez",
+    "email": "isabel.jimenez@empresa.com",
+    "first_name": "Isabel",
+    "last_name": "Jiménez",
+    "is_active": true,
+    "is_staff": false,
+    "is_superuser": false,
+    "date_joined": "2025-09-07T09:09:26.201723+00:00",
+    "last_login": null
+  }
+]

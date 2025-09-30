@@ -1,0 +1,130 @@
+[
+  {
+    "model": "users.customuser",
+    "pk": 1,
+    "fields": {
+      "password": "pbkdf2_sha256$600000$test123$test123",
+      "last_login": null,
+      "is_superuser": true,
+      "username": "admin",
+      "first_name": "Administrador",
+      "last_name": "Sistema",
+      "email": "admin@example.com",
+      "is_staff": true,
+      "is_active": true,
+      "date_joined": "2024-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "users.customuser",
+    "pk": 2,
+    "fields": {
+      "password": "pbkdf2_sha256$600000$test123$test123",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "maria.garcia",
+      "first_name": "María",
+      "last_name": "García",
+      "email": "maria.garcia@example.com",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2024-01-15T10:30:00Z"
+    }
+  },
+  {
+    "model": "users.customuser",
+    "pk": 3,
+    "fields": {
+      "password": "pbkdf2_sha256$600000$test123$test123",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "carlos.rodriguez",
+      "first_name": "Carlos",
+      "last_name": "Rodríguez",
+      "email": "carlos.rodriguez@example.com",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2024-01-20T14:15:00Z"
+    }
+  },
+  {
+    "model": "users.customuser",
+    "pk": 4,
+    "fields": {
+      "password": "pbkdf2_sha256$600000$test123$test123",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "ana.martinez",
+      "first_name": "Ana",
+      "last_name": "Martínez",
+      "email": "ana.martinez@example.com",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2024-02-01T09:45:00Z"
+    }
+  },
+  {
+    "model": "users.customuser",
+    "pk": 5,
+    "fields": {
+      "password": "pbkdf2_sha256$600000$test123$test123",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "juan.lopez",
+      "first_name": "Juan",
+      "last_name": "López",
+      "email": "juan.lopez@example.com",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2024-02-10T16:20:00Z"
+    }
+  },
+  {
+    "model": "users.customuser",
+    "pk": 6,
+    "fields": {
+      "password": "pbkdf2_sha256$600000$test123$test123",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "lucia.hernandez",
+      "first_name": "Lucía",
+      "last_name": "Hernández",
+      "email": "lucia.hernandez@example.com",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2024-02-15T11:30:00Z"
+    }
+  },
+  {
+    "model": "users.customuser",
+    "pk": 7,
+    "fields": {
+      "password": "pbkdf2_sha256$600000$test123$test123",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "pedro.gonzalez",
+      "first_name": "Pedro",
+      "last_name": "González",
+      "email": "pedro.gonzalez@example.com",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2024-02-20T13:45:00Z"
+    }
+  },
+  {
+    "model": "users.customuser",
+    "pk": 8,
+    "fields": {
+      "password": "pbkdf2_sha256$600000$test123$test123",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "sofia.torres",
+      "first_name": "Sofía",
+      "last_name": "Torres",
+      "email": "sofia.torres@example.com",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2024-03-01T08:15:00Z"
+    }
+  }
+] 

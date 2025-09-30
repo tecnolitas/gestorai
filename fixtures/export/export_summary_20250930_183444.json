@@ -1,0 +1,18 @@
+{
+  "export_timestamp": "20250930_183444",
+  "export_date": "2025-09-30T18:34:44.591717",
+  "counts": {
+    "users": 10,
+    "projects": 27,
+    "tasks": 139,
+    "comments": 0,
+    "task_history": 22
+  },
+  "files": [
+    "users_20250930_183444.json",
+    "projects_20250930_183444.json",
+    "tasks_20250930_183444.json",
+    "comments_20250930_183444.json",
+    "task_history_20250930_183444.json"
+  ]
+}

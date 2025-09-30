@@ -1,0 +1,99 @@
+version: '3.8'
+
+services:
+  # Redis para caché en producción
+  redis:
+    image: redis:7-alpine
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis_data:/data
+    restart: unless-stopped
+    command: redis-server --appendonly yes
+
+  # PostgreSQL Database
+  db:
+    image: postgres:15-alpine
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    environment:
+      - POSTGRES_DB=${DB_NAME:-gestor_proyectos}
+      - POSTGRES_USER=${DB_USER:-gestor_user}
+      - POSTGRES_PASSWORD=${DB_PASSWORD:-gestor_password}
+    ports:
+      - "5432:5432"
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${DB_USER:-gestor_user} -d ${DB_NAME:-gestor_proyectos}"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    restart: unless-stopped
+
+  # Django Backend
+  web:
+    build: 
+      context: .
+      dockerfile: Dockerfile
+    expose:
+      - "8000"
+    environment:
+      - DJANGO_SETTINGS_MODULE=config.settings.production
+      - DEBUG=${DEBUG:-False}
+      - SECRET_KEY=${SECRET_KEY:-your-production-secret-key}
+      - DB_ENGINE=django.db.backends.postgresql
+      - DB_NAME=${DB_NAME:-gestor_proyectos}
+      - DB_USER=${DB_USER:-gestor_user}
+      - DB_PASSWORD=${DB_PASSWORD:-gestor_password}
+      - DB_HOST=db
+      - DB_PORT=5432
+      - REDIS_URL=redis://redis:6379/1
+      - EMAIL_HOST=${EMAIL_HOST:-smtp.gmail.com}
+      - EMAIL_PORT=${EMAIL_PORT:-587}
+      - EMAIL_HOST_USER=${EMAIL_HOST_USER:-}
+      - EMAIL_HOST_PASSWORD=${EMAIL_HOST_PASSWORD:-}
+    depends_on:
+      db:
+        condition: service_healthy
+      redis:
+        condition: service_started
+    restart: unless-stopped
+    command: >
+      sh -c "python manage.py migrate &&
+             python manage.py collectstatic --noinput &&
+             gunicorn config.wsgi:application --bind 0.0.0.0:8000 --workers 3 --timeout 120"
+
+  # Next.js Frontend
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    expose:
+      - "3000"
+    environment:
+      - NODE_ENV=production
+      - NEXT_PUBLIC_API_URL=${NEXT_PUBLIC_API_URL:-https://gestorai.tecnolitas.com}
+    depends_on:
+      - web
+    restart: unless-stopped
+
+  # Nginx Proxy
+  nginx:
+    build:
+      context: ./nginx
+      dockerfile: Dockerfile
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ./nginx/ssl:/etc/nginx/ssl:ro
+      - ./staticfiles:/var/www/static:ro
+      - nginx_logs:/var/log/nginx
+    depends_on:
+      - frontend
+      - web
+    restart: unless-stopped
+
+volumes:
+  postgres_data:
+  redis_data:
+  nginx_logs:
