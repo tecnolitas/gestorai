@@ -69,11 +69,13 @@ services:
     build:
       context: ./frontend
       dockerfile: Dockerfile
+      args:
+        - NEXT_PUBLIC_API_URL=https://gestorai.tecnolitas.com
     expose:
       - "3000"
     environment:
       - NODE_ENV=production
-      - NEXT_PUBLIC_API_URL=${NEXT_PUBLIC_API_URL:-https://gestorai.tecnolitas.com}
+      - NEXT_PUBLIC_API_URL=https://gestorai.tecnolitas.com
     depends_on:
       - web
     restart: unless-stopped
