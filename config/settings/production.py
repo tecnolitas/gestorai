@@ -14,8 +14,11 @@ SECRET_KEY = os.getenv('SECRET_KEY', 'your-production-secret-key-change-this')
 ALLOWED_HOSTS = [
     'gestorai.tecnolitas.com',
     'localhost',  # For health checks
+    '127.0.0.1',  # For health checks
     'web',  # For internal container communication
+    'web:8000',  # For internal container communication with port
     '172.18.0.4',  # Container IP
+    '172.18.0.0/16',  # Docker network range
 ]
 
 # CSRF Configuration for production
